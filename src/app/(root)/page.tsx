@@ -25,7 +25,7 @@ export default function Home() {
     {
       click:
         "Pengisian Formulir Khusus pengambilan Produk Pengadilan melalui Kuasa Hukum/ Kuasa Insidentil",
-      link: "/https://docs.google.com/forms/d/e/1FAIpQLSfbOZ-myoypA8yDnrNcYOqlwNvGuA140XeVJJE7p28w3wZxkA/viewform?usp=sf_link",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdw8Du6MVkSnPFLLJFG0zvZl1o32SznQTO5aJ-vS6oErNPotg/viewform?usp=sf_link",
     },
   ];
 
