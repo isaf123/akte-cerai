@@ -6,22 +6,29 @@ import Link from "next/link";
 export default function Home() {
   const content = [
     {
-      click: "Pendaftaran Pengambilan Akta Cerai",
-      link: "/daftar",
-    },
-    {
-      click: "Pengertian Akta Cerai ",
+      click: "Pengertian Akta Cerai, Salinan Putusan, dan Salinan Penetapan ",
       link: "/informasi",
     },
     {
-      click: "Daftar Tarif Penerimaan Bukan Pajak",
+      click:
+        "Persyaratan Pengambilan Produk Pengadilan \n (Akta Cerai, Salinan Putusan, dan Salinan Penetapan)",
+      link: "/",
+    },
+    {
+      click: "Informasi Tarif Penerimaan Bukan Pajak (PNBP) Produk Pengadilan",
       link: "/hargatarif",
     },
     {
-      click: "Syarat Pengajuan Duplikat Akta Cerai",
-      link: "/",
+      click: "Sistem Booking Online Pengambilan Produk Pengadilan",
+      link: "/daftar",
+    },
+    {
+      click:
+        "Pengisian Formulir Khusus pengambilan Produk Pengadilan melalui Kuasa Hukum/ Kuasa Insidentil",
+      link: "/https://docs.google.com/forms/d/e/1FAIpQLSfbOZ-myoypA8yDnrNcYOqlwNvGuA140XeVJJE7p28w3wZxkA/viewform?usp=sf_link",
     },
   ];
+
   return (
     <div className="font-[family-name:var(--font-geist-sans)] bg-black text-gray-900">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start relative">
