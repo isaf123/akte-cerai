@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <Link href="/">
+        <Link href="/menu">
           <Button className="bg-gray-800 text-gray-50 mt-10 ml-10 hover:bg-gray-700">
             <MoveLeft className="size-4 mr-2" /> Kembali
           </Button>
