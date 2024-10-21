@@ -12,7 +12,7 @@ export default function Home() {
     {
       click:
         "Persyaratan Pengambilan Produk Pengadilan \n (Akta Cerai, Salinan Putusan, dan Salinan Penetapan)",
-      link: "/",
+      link: "/syarat",
     },
     {
       click: "Informasi Tarif Penerimaan Bukan Pajak (PNBP) Produk Pengadilan",

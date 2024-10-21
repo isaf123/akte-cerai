@@ -29,9 +29,23 @@ export default function Home() {
                       height={300}
                       className="max-md:w-[320px] max-md:h-fit"
                     />
+                    <div className="text-white w-[520px] text-center">
+                      <p>Assalmualaikum Wr Wb</p>
+                      <p>
+                        Selamat datang dilayanan penyerahan produk Pengadilan
+                        Agama Sampang. Layanan ini diberi nama{" "}
+                        <span className="font-semibold text-[#a9efc3]">
+                          SIRAKYAT
+                        </span>{" "}
+                        yang diambil dari 6 tahapan gagasan kreatif dan inovatif
+                        rancangan aktualisasi.
+                      </p>
+                    </div>
                     <p className="text-white text-sm">
-                      <span className="text-[#a9efc3]">Oleh :</span> Tamara
+                      <span className="text-[#a9efc3]">Oleh :</span>Belinda Dwi
+                      Tamara, S.H.
                     </p>
+
                     <Link href={"/menu"}>
                       <Button className="bg-[#a9efc3] text-black mt-5 mb-10 hover:text-white">
                         lanjut
