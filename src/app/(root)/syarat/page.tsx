@@ -1,9 +1,4 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { Separator } from "@/components/ui/separator";
-import { MoveRight } from "lucide-react";
 import BlurFade from "@/components/ui/blur-fade";
-import Link from "next/link";
 
 // import Daftarkan from "@/assets/icons/daftarkan.svg";
 export default function Syarat() {
