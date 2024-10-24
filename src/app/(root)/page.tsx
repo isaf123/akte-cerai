@@ -29,19 +29,19 @@ export default function Home() {
                       height={300}
                       className="max-md:w-[320px] max-md:h-fit"
                     />
-                    <div className="text-white w-[520px] text-center">
+                    <div className="text-white max-md:w-fit px-2 w-[620px] text-justify md:text-xl mt-5">
                       <p>Assalmualaikum Wr Wb</p>
-                      <p>
+                      <p className="">
                         Selamat datang dilayanan penyerahan produk Pengadilan
                         Agama Sampang. Layanan ini diberi nama{" "}
-                        <span className="font-semibold text-[#a9efc3]">
+                        <span className="font-semibold text-[#a9efc3] italic">
                           SIRAKYAT
                         </span>{" "}
                         yang diambil dari 6 tahapan gagasan kreatif dan inovatif
                         rancangan aktualisasi.
                       </p>
                     </div>
-                    <p className="text-white text-sm">
+                    <p className="text-white max-md:text-sm mt-4">
                       <span className="text-[#a9efc3]">Oleh :</span>Belinda Dwi
                       Tamara, S.H.
                     </p>

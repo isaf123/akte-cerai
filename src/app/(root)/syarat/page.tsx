@@ -20,11 +20,11 @@ export default function Syarat() {
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-0"></div>
-            <div className="absolute max-md:top-1/8 top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 max-md:-translate-y-10">
-              <div className="w-fit m-auto min-h-screen flex items-center flex-col gap-5 justify-center max-md:mt-10 ">
-                <BlurFade delay={0.25} inView>
-                  <div className="flex max-md:flex-col gap-5">
-                    <div className="text-white w-[520px] max-md:w-[340px] mb-10">
+            <div className="absolute max-md:-top-1/4 top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 max-md:-translate-y-10">
+              <BlurFade delay={0.25} inView>
+                <div className="w-full m-auto min-h-screen flex items-center flex-col gap-5 justify-center max-md:mt-10 ">
+                  <div className="">
+                    <div className="text-white w-[520px] max-md:w-[330px] px-4 mb-10">
                       <p className="text-5xl max-md:text-3xl ">
                         Syarat Pengajuan Duplikat{" "}
                         <span className="italic font-semibold text-[#a9efc3]">
@@ -33,24 +33,24 @@ export default function Syarat() {
                       </p>
                     </div>
 
-                    <div className="flex flex-col text-start gap-5">
+                    <div className="flex flex-col text-start gap-5 ">
                       {syaratAktaCerai.map((val, idx) => {
                         return (
                           <div
                             key={idx}
                             className="flex gap-5 text-white items-start"
                           >
-                            <div className="bg-[#a9efc3] size-8 text-center rounded-full text-black flex items-center justify-center">
+                            <div className="bg-[#a9efc3] max-md:size-6 size-8 text-center rounded-full text-black flex items-center justify-center ">
                               <p className="font-semibold">{idx + 1}</p>
                             </div>
-                            <p className="w-[340px]">{val}</p>
+                            <p className="w-full">{val}</p>
                           </div>
                         );
                       })}
                     </div>
                   </div>
-                </BlurFade>
-              </div>
+                </div>
+              </BlurFade>
             </div>
           </div>
         </div>
