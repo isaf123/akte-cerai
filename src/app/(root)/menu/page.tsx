@@ -1,6 +1,8 @@
 "use client";
 import ButtonMorph from "@/components/ButtonMorph";
 import Link from "next/link";
+import { MonitorSmartphoneIcon, UsersRound } from "lucide-react";
+import { Separator } from "@radix-ui/react-separator";
 
 // import Daftarkan from "@/assets/icons/daftarkan.svg";
 export default function Home() {
@@ -18,15 +20,15 @@ export default function Home() {
       click: "Informasi Tarif Penerimaan Bukan Pajak (PNBP) Produk Pengadilan",
       link: "/hargatarif",
     },
-    {
-      click: "Sistem Booking Online Pengambilan Produk Pengadilan",
-      link: "/daftar",
-    },
-    {
-      click:
-        "Pengisian Formulir Khusus pengambilan Produk Pengadilan melalui Kuasa Hukum/ Kuasa Insidentil",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSfbOZ-myoypA8yDnrNcYOqlwNvGuA140XeVJJE7p28w3wZxkA/viewform?usp=sf_link",
-    },
+    // {
+    //   click: "Sistem Booking Online Pengambilan Produk Pengadilan",
+    //   link: "/daftar",
+    // },
+    // {
+    //   click:
+    //     "Pengisian Formulir Khusus pengambilan Produk Pengadilan melalui Kuasa Hukum/ Kuasa Insidentil",
+    //   link: "https://docs.google.com/forms/d/e/1FAIpQLSfbOZ-myoypA8yDnrNcYOqlwNvGuA140XeVJJE7p28w3wZxkA/viewform?usp=sf_link",
+    // },
   ];
 
   return (
@@ -40,15 +42,45 @@ export default function Home() {
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-0"></div>
-            <div className="absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 max-md:-translate-y-10">
+            <div className="absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 max-md:-translate-y-10 pb-10">
               <div className="w-fit m-auto min-h-screen flex items-center flex-col gap-5 justify-center ">
                 <h3 className="max-md:text-2xl text-5xl max-md:w-[320px] w-[700px] text-white text-center mb-10">
-                  Layanan Pengurusan{" "}
+                  Layanan Pengambilan Produk Pengadilan{" "}
                   <span className="font-bold text-[#a9efc3] italic">
-                    Akta Cerai
+                    Agama Sampang
                   </span>{" "}
-                  Pengadilan Agama Sampang
+                  digital/online
                 </h3>
+                <div className="flex max-md:w-[330px] w-[580px] gap-4">
+                  <Link href={"/daftar"} className="w-[50%]">
+                    <button className="max-md:h-44 h-72  w-full max-md:text-sm  bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl border border-white border-opacity-20 shadow-lg text-white   hover:bg-opacity-30 transition-all duration-300">
+                      <MonitorSmartphoneIcon className="max-md:size-12 size-24 m-auto" />
+                      <p className="max-md:text-xl text-2xl font-semibold text-[#a9efc3]">
+                        Booking
+                      </p>
+                      <p>Pengambilan Produk</p>
+                    </button>
+                  </Link>
+                  <Link
+                    href={
+                      "https://docs.google.com/forms/d/e/1FAIpQLSfbOZ-myoypA8yDnrNcYOqlwNvGuA140XeVJJE7p28w3wZxkA/viewform?usp=sf_link"
+                    }
+                    className="w-[50%]"
+                  >
+                    <button className="max-md:h-44 h-72  w-full max-md:text-sm bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl border border-white border-opacity-20 shadow-lg text-white   hover:bg-opacity-30 transition-all duration-300 px-3">
+                      <UsersRound className="max-md:size-14 size-24 m-auto" />
+                      <p className="max-md:text-xl text-2xl font-semibold text-[#a9efc3]">
+                        Daftar
+                      </p>
+                      <p className="max-md:text-xs">
+                        Pengambilan Produk Oleh Kuasa Hukum/Kuasa Isidentil
+                      </p>{" "}
+                    </button>
+                  </Link>
+                </div>
+                <h2 className=" italic mt-10 text-[#a9efc3] font-bold text-2xl">
+                  Informasi
+                </h2>
                 {content.map(
                   (item: { link: string; click: string }, idx: number) => {
                     return (
