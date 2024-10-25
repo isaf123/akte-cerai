@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-geist-sans)] `}
       >
         <Link href="/menu">
           <Button className="bg-gray-800 text-gray-50 mt-10 ml-10 hover:bg-gray-700">
