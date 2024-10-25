@@ -2,7 +2,6 @@
 import ButtonMorph from "@/components/ButtonMorph";
 import Link from "next/link";
 import { MonitorSmartphoneIcon, UsersRound } from "lucide-react";
-import { Separator } from "@radix-ui/react-separator";
 
 // import Daftarkan from "@/assets/icons/daftarkan.svg";
 export default function Home() {
