@@ -63,9 +63,7 @@ export default function Home() {
                       </button>
                     </Link>
                     <Link
-                      href={
-                        "https://docs.google.com/forms/d/e/1FAIpQLSfbOZ-myoypA8yDnrNcYOqlwNvGuA140XeVJJE7p28w3wZxkA/viewform?usp=sf_link"
-                      }
+                      href={"https://forms.gle/tURVxF1tJFz2syDE7"}
                       className="w-[50%]"
                     >
                       <button className="max-md:h-44 h-72  w-full max-md:text-sm bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl border border-white border-opacity-20 shadow-lg text-white   hover:bg-opacity-30 transition-all duration-300 px-3">

@@ -14,7 +14,7 @@ export default function Submit() {
         ></WordPullUp>
         <BlurFade delay={0.5}>
           <div className="w-fit m-auto">
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdw8Du6MVkSnPFLLJFG0zvZl1o32SznQTO5aJ-vS6oErNPotg/viewform?fbzx=-7886196831081016118">
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScIR3jOL1QI0Lrl7r3efb18o4UrQJVTEB2OtF0bAH47V-M5HA/viewform?usp=sf_link">
               <Button className="m-auto text-lg px-8 py-6 bg-[#32b281]">
                 Daftar
               </Button>
@@ -36,16 +36,18 @@ export default function Submit() {
               Check Nomor Perkara Dan Tanggal BHT (Berkekuatan Hukum Tetap) di
               SIPP.
             </h3>
-            <Button className="flex gap-2 mt-2 bg-[#32b281]">
-              <p className="">klik disini untuk Check</p>
-              <Image
-                src={"/images/waiconimg.png"}
-                alt=""
-                width={22}
-                height={22}
-                className="animate-bounce"
-              />
-            </Button>
+            <Link href={""}>
+              <Button className="flex gap-2 mt-2 bg-[#32b281]">
+                <p className="">klik disini untuk Check</p>
+                <Image
+                  src={"/images/waiconimg.png"}
+                  alt=""
+                  width={22}
+                  height={22}
+                  className="animate-bounce"
+                />
+              </Button>
+            </Link>
           </div>
 
           <div className="flex flex-col items-center w-[265px]">
