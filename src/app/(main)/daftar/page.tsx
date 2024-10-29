@@ -36,7 +36,11 @@ export default function Submit() {
               Check Nomor Perkara Dan Tanggal BHT (Berkekuatan Hukum Tetap) di
               SIPP.
             </h3>
-            <Link href={""}>
+            <Link
+              href={
+                "https://wa.me/6285183213278?text=Halo,%20apakah%20nomor%20perkara%20saya%20telah%20terbit?%20dengan:%0A%0Anama:%0A%0ANIK:%3A%0A1."
+              }
+            >
               <Button className="flex gap-2 mt-2 bg-[#32b281]">
                 <p className="">klik disini untuk Check</p>
                 <Image
