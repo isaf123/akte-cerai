@@ -1,14 +1,11 @@
+import AkteCerai from "./view/akte";
+import SalinanPutusan from "./view/salinanPutusan";
+import LegalisirAkta from "./view/Legalisir";
+import Duplikat from "./view/Duplikat";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import BlurFade from "@/components/ui/blur-fade";
-
 // import Daftarkan from "@/assets/icons/daftarkan.svg";
 export default function Syarat() {
-  const syaratAktaCerai = [
-    `Surat Keterangan dari desa yang menerangkan "Bahwa
-    Akta Cerai tersebut belum pernah dipergunakan untuk
-    menikah lagi"`,
-    "Surat Tanda Lapor Kehilangan dari Kepolisian",
-    "Fotocopy KTP yang bersangkutan",
-  ];
   return (
     <div className="font-[family-name:var(--font-geist-sans)] bg-black text-gray-900">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start relative">
@@ -20,37 +17,78 @@ export default function Syarat() {
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-0"></div>
-            <div className="absolute max-md:-top-1/4 top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 max-md:-translate-y-10">
-              <BlurFade delay={0.25} inView>
-                <div className="w-full m-auto min-h-screen flex items-center flex-col gap-5 justify-center max-md:mt-10 ">
-                  <div className="">
-                    <div className="text-white w-[520px] max-md:w-[330px] px-4 mb-10">
-                      <p className="text-5xl max-md:text-3xl ">
-                        Syarat Pengajuan Duplikat{" "}
-                        <span className="italic font-semibold text-[#a9efc3]">
-                          Akta Cerai
-                        </span>
-                      </p>
-                    </div>
-
-                    <div className="flex flex-col text-start gap-5 ">
-                      {syaratAktaCerai.map((val, idx) => {
-                        return (
-                          <div
-                            key={idx}
-                            className="flex gap-5 text-white items-start"
-                          >
-                            <div className="bg-[#a9efc3] max-md:size-6 size-8 text-center rounded-full text-black flex items-center justify-center ">
-                              <p className="font-semibold">{idx + 1}</p>
-                            </div>
-                            <p className="w-full">{val}</p>
-                          </div>
-                        );
-                      })}
-                    </div>
+            <div className="pb-20 m-auto max-md:w-[330px] w-[720px] py-40 z-50 absolute left-1/2 -translate-x-1/2">
+              <div className=" mx-auto flex items-center flex-col gap-5 justify-center max-md:mt-10 ">
+                <div className="">
+                  <div className="text-white  mb-10">
+                    <p className="text-5xl max-md:text-3xl text-center">
+                      Syarat Pengambilan Produk{" "}
+                      <span className="italic font-semibold text-[#a9efc3]">
+                        Pengadilan
+                      </span>
+                    </p>
                   </div>
+                  <Tabs defaultValue="akta">
+                    <TabsList className="flex max-md:w-full w-[1080px] max-md:h-40 h-10 max-md:flex-col">
+                      <TabsTrigger
+                        value="akta"
+                        className="flex-1 max-md:min-w-full"
+                      >
+                        Akta Cerai
+                      </TabsTrigger>
+                      <TabsTrigger
+                        value="salinan"
+                        className="flex-1 max-md:min-w-full"
+                      >
+                        Salinan Putusan/Salinan Penetapan
+                      </TabsTrigger>
+                      <TabsTrigger
+                        value="legalisir"
+                        className="flex-1 max-md:min-w-full"
+                      >
+                        Legalisir Akta Cerai
+                      </TabsTrigger>
+                      <TabsTrigger
+                        value="duplikat"
+                        className="flex-1 max-md:min-w-full"
+                      >
+                        Duplikat Akta Cerai
+                      </TabsTrigger>
+                    </TabsList>
+
+                    <div className="w-[720px] max-md:w-[330px] m-auto mt-10">
+                      <TabsContent value="akta">
+                        <BlurFade delay={0.2} inView>
+                          <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
+                            Akta Cerai
+                          </h2>
+                          <AkteCerai />
+                        </BlurFade>
+                      </TabsContent>
+
+                      <TabsContent value="salinan">
+                        <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
+                          Salinan Putusan/Salinan Penetapan
+                        </h2>
+                        <SalinanPutusan />
+                      </TabsContent>
+
+                      <TabsContent value="legalisir">
+                        <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
+                          Legalisir Akta Cerai{" "}
+                        </h2>
+                        <LegalisirAkta />
+                      </TabsContent>
+                      <TabsContent value="duplikat">
+                        <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
+                          Duplikat Akta Cerai
+                        </h2>
+                        <Duplikat />
+                      </TabsContent>
+                    </div>
+                  </Tabs>
                 </div>
-              </BlurFade>
+              </div>
             </div>
           </div>
         </div>
