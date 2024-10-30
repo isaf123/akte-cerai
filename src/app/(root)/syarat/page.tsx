@@ -67,23 +67,29 @@ export default function Syarat() {
                       </TabsContent>
 
                       <TabsContent value="salinan">
-                        <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
-                          Salinan Putusan/Salinan Penetapan
-                        </h2>
-                        <SalinanPutusan />
+                        <BlurFade delay={0.2} inView>
+                          <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
+                            Salinan Putusan/Salinan Penetapan
+                          </h2>
+                          <SalinanPutusan />
+                        </BlurFade>
                       </TabsContent>
 
                       <TabsContent value="legalisir">
-                        <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
-                          Legalisir Akta Cerai{" "}
-                        </h2>
-                        <LegalisirAkta />
+                        <BlurFade delay={0.2} inView>
+                          <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
+                            Legalisir Akta Cerai{" "}
+                          </h2>
+                          <LegalisirAkta />
+                        </BlurFade>
                       </TabsContent>
                       <TabsContent value="duplikat">
-                        <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
-                          Duplikat Akta Cerai
-                        </h2>
-                        <Duplikat />
+                        <BlurFade delay={0.2} inView>
+                          <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
+                            Duplikat Akta Cerai
+                          </h2>
+                          <Duplikat />
+                        </BlurFade>
                       </TabsContent>
                     </div>
                   </Tabs>

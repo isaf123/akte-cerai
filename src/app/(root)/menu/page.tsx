@@ -57,9 +57,9 @@ export default function Home() {
                       <button className="max-md:h-44 h-72  w-full max-md:text-sm  bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl border border-white border-opacity-20 shadow-lg text-white   hover:bg-opacity-30 transition-all duration-300">
                         <MonitorSmartphoneIcon className="max-md:size-12 size-24 m-auto" />
                         <p className="max-md:text-xl text-2xl font-semibold text-[#a9efc3]">
-                          Booking
+                          Booking Mandiri
                         </p>
-                        <p>Pengambilan Produk</p>
+                        <p>Pengambilan Produk tanpa Kuasa Hukum</p>
                       </button>
                     </Link>
                     <Link
