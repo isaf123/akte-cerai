@@ -1,10 +1,15 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import WordPullUp from "@/components/ui/word-pull-up";
 import { BookCheck, School, MailCheck } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import BlurFade from "@/components/ui/blur-fade";
+import { useRouter } from "next/router";
 export default function Submit() {
+  const url = window.location.href;
+  console.log(url.includes("kuasa"));
+
   return (
     <div className=" min-h-screen m-auto z-10 flex flex-col justify-center items-center max-md:mt-20">
       <div>
@@ -14,7 +19,15 @@ export default function Submit() {
         ></WordPullUp>
         <BlurFade delay={0.5}>
           <div className="w-fit m-auto">
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScIR3jOL1QI0Lrl7r3efb18o4UrQJVTEB2OtF0bAH47V-M5HA/viewform?usp=sf_link">
+            <Link
+              href={
+                url.includes("kuasa")
+                  ? "https://forms.gle/A3jqTJGsNvhf8hn66"
+                  : url.includes("mandiri")
+                  ? "https://forms.gle/eLkvumyvanYKEqkj6"
+                  : ""
+              }
+            >
               <Button className="m-auto text-lg px-8 py-6 bg-[#32b281]">
                 Daftar
               </Button>
@@ -38,7 +51,7 @@ export default function Submit() {
             </h3>
             <Link
               href={
-                "https://wa.me/6285183213278?text=Halo,%20apakah%20nomor%20perkara%20saya%20telah%20terbit?%20dengan:%0A%0Anama:%0A%0ANIK:%3A%0A1."
+                "https://wa.me/6285183213278?text=Assalamualaikum..%0A%0ASelamat%20datang%20di%20Pengadilan%20Agama%20Sampang.%20Silahkan%20informasikan%0ANama%20%3A%20%0ANomor%20Perkara%20%3A%20%0APertanyaan%20%3A%20%0A%0ATerimakasih%20telah%20menghubungi%20Pengadilan%20Agama%20Sampang%2C%20kami%20akan%20merespon%20secepatnya.%0A%0AWassalamu'alaikum.."
               }
             >
               <Button className="flex gap-2 mt-2 bg-[#32b281]">

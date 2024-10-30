@@ -132,7 +132,7 @@ export default function Home() {
                         T
                       </h3>
                       <p>
-                        membuat notifik membuat formulir iden
+                        membuat formulir iden
                         <span className="font-extrabold text-[#a9efc3]">T</span>
                         itas diri dalam penyerahan surat kuasa secara digital
                         dalam web e-akta cerai

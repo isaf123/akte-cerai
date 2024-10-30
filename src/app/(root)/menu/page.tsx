@@ -53,27 +53,26 @@ export default function Home() {
                     digital/online
                   </h3>
                   <div className="flex max-md:w-[330px] w-[580px] gap-4">
-                    <Link href={"/daftar"} className="w-[50%]">
+                    <Link href={"/daftar/mandiri"} className="w-[50%]">
                       <button className="max-md:h-44 h-72  w-full max-md:text-sm  bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl border border-white border-opacity-20 shadow-lg text-white   hover:bg-opacity-30 transition-all duration-300">
                         <MonitorSmartphoneIcon className="max-md:size-12 size-24 m-auto" />
-                        <p className="max-md:text-xl text-2xl font-semibold text-[#a9efc3]">
+                        <p className="max-md:text-base text-2xl font-semibold text-[#a9efc3]">
                           Booking Mandiri
                         </p>
-                        <p>Pengambilan Produk tanpa Kuasa Hukum</p>
+                        <p className="max-md:text-xs">
+                          Pengambilan Produk tanpa Kuasa Hukum
+                        </p>
                       </button>
                     </Link>
-                    <Link
-                      href={"https://forms.gle/tURVxF1tJFz2syDE7"}
-                      className="w-[50%]"
-                    >
-                      <button className="max-md:h-44 h-72  w-full max-md:text-sm bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl border border-white border-opacity-20 shadow-lg text-white   hover:bg-opacity-30 transition-all duration-300 px-3">
-                        <UsersRound className="max-md:size-14 size-24 m-auto" />
-                        <p className="max-md:text-xl text-2xl font-semibold text-[#a9efc3]">
-                          Daftar
+                    <Link href={"/daftar/kuasa"} className="w-[50%]">
+                      <button className="max-md:h-44 h-72  w-full max-md:text-sm bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl border border-white border-opacity-20 shadow-lg text-white   hover:bg-opacity-30 transition-all duration-300 px-2">
+                        <UsersRound className="max-md:size-12 size-24 m-auto" />
+                        <p className="max-md:text-base text-2xl font-semibold text-[#a9efc3]">
+                          Booking Melalui Kuasa
                         </p>
                         <p className="max-md:text-xs">
-                          Pengambilan Produk Oleh Kuasa Hukum/Kuasa Isidentil
-                        </p>{" "}
+                          Pengambilan Produk Oleh Kuasa Hukum/Kuasa Insidentil
+                        </p>
                       </button>
                     </Link>
                   </div>
