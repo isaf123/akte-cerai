@@ -5,10 +5,8 @@ import { BookCheck, School, MailCheck } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import BlurFade from "@/components/ui/blur-fade";
-import { useRouter } from "next/router";
 export default function Submit() {
   const url = window.location.href;
-  console.log(url.includes("kuasa"));
 
   return (
     <div className=" min-h-screen m-auto z-10 flex flex-col justify-center items-center max-md:mt-20">
