@@ -2,7 +2,6 @@ import AkteCerai from "./view/akte";
 import SalinanPutusan from "./view/salinanPutusan";
 import LegalisirAkta from "./view/Legalisir";
 import Duplikat from "./view/Duplikat";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import BlurFade from "@/components/ui/blur-fade";
 // import Daftarkan from "@/assets/icons/daftarkan.svg";
 export default function Syarat() {
@@ -28,71 +27,36 @@ export default function Syarat() {
                       </span>
                     </p>
                   </div>
-                  <Tabs defaultValue="akta">
-                    <TabsList className="flex max-md:w-full w-[1080px] max-md:h-40 h-10 max-md:flex-col">
-                      <TabsTrigger
-                        value="akta"
-                        className="flex-1 max-md:min-w-full"
-                      >
+
+                  <div className="w-[720px] max-md:w-[330px] m-auto mt-10">
+                    <BlurFade delay={0.2} inView>
+                      <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
                         Akta Cerai
-                      </TabsTrigger>
-                      <TabsTrigger
-                        value="salinan"
-                        className="flex-1 max-md:min-w-full"
-                      >
+                      </h2>
+                      <AkteCerai />
+                    </BlurFade>
+
+                    <BlurFade delay={0.2} inView>
+                      <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
                         Salinan Putusan/Salinan Penetapan
-                      </TabsTrigger>
-                      <TabsTrigger
-                        value="legalisir"
-                        className="flex-1 max-md:min-w-full"
-                      >
-                        Legalisir Akta Cerai
-                      </TabsTrigger>
-                      <TabsTrigger
-                        value="duplikat"
-                        className="flex-1 max-md:min-w-full"
-                      >
+                      </h2>
+                      <SalinanPutusan />
+                    </BlurFade>
+
+                    <BlurFade delay={0.2} inView>
+                      <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
+                        Legalisir Akta Cerai{" "}
+                      </h2>
+                      <LegalisirAkta />
+                    </BlurFade>
+
+                    <BlurFade delay={0.2} inView>
+                      <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
                         Duplikat Akta Cerai
-                      </TabsTrigger>
-                    </TabsList>
-
-                    <div className="w-[720px] max-md:w-[330px] m-auto mt-10">
-                      <TabsContent value="akta">
-                        <BlurFade delay={0.2} inView>
-                          <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
-                            Akta Cerai
-                          </h2>
-                          <AkteCerai />
-                        </BlurFade>
-                      </TabsContent>
-
-                      <TabsContent value="salinan">
-                        <BlurFade delay={0.2} inView>
-                          <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
-                            Salinan Putusan/Salinan Penetapan
-                          </h2>
-                          <SalinanPutusan />
-                        </BlurFade>
-                      </TabsContent>
-
-                      <TabsContent value="legalisir">
-                        <BlurFade delay={0.2} inView>
-                          <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
-                            Legalisir Akta Cerai{" "}
-                          </h2>
-                          <LegalisirAkta />
-                        </BlurFade>
-                      </TabsContent>
-                      <TabsContent value="duplikat">
-                        <BlurFade delay={0.2} inView>
-                          <h2 className="text-[#a9efc3] font-semibold text-3xl mb-4">
-                            Duplikat Akta Cerai
-                          </h2>
-                          <Duplikat />
-                        </BlurFade>
-                      </TabsContent>
-                    </div>
-                  </Tabs>
+                      </h2>
+                      <Duplikat />
+                    </BlurFade>
+                  </div>
                 </div>
               </div>
             </div>

@@ -43,9 +43,6 @@ export default function PriceList() {
         <h3 className="max-md:text-3xl text-4xl font-bold text-center">
           Daftar Tarif Penerimaan Bukan Pajak {`(PNBP)`}
         </h3>
-        <p className="text-lg text-center text-[#17a34a]">
-          Informasi surat penting dalam proses pengurusan perceraian
-        </p>
       </div>
       <div className="max-w-[920px] m-auto ">
         <Card>
