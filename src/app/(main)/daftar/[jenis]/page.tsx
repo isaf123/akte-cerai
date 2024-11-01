@@ -49,7 +49,7 @@ export default function Submit() {
             </h3>
             <Link
               href={
-                "https://wa.me/6285183213278?text=Assalamualaikum..%0A%0ASelamat%20datang%20di%20Pengadilan%20Agama%20Sampang.%20Silahkan%20informasikan%0ANama%20%3A%20%0ANomor%20Perkara%20%3A%20%0APertanyaan%20%3A%20%0A%0ATerimakasih%20telah%20menghubungi%20Pengadilan%20Agama%20Sampang%2C%20kami%20akan%20merespon%20secepatnya.%0A%0AWassalamu'alaikum.."
+                "https://wa.me/6285183213278?text=Assalamualaikum..%0A%0ASaya%20mau%20bookinh%20online%20boleh%20minta%20tolong%20dicheck-an%20apakah%20sudah%20keluar%20untuk%20tanggal%20BHT%20nya"
               }
             >
               <Button className="flex gap-2 mt-2 bg-[#32b281]">

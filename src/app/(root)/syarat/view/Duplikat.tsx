@@ -24,8 +24,8 @@ export default function Duplikat() {
         </div>
 
         <p className="w-full">
-          3. Membawa surat keterangan dari Kepala Desa yang menerangkan “bahwa
-          Akta Cerai tersebut belum pernah dipergunakan untuk menikah lagi” yang
+          Membawa surat keterangan dari Kepala Desa yang menerangkan “bahwa Akta
+          Cerai tersebut belum pernah dipergunakan untuk menikah lagi” yang
           ditandatangani oleh Kepala Desa serta dibubuhi stempel
         </p>
       </div>
@@ -36,7 +36,7 @@ export default function Duplikat() {
         </div>
 
         <p className="w-full">
-          4. Lalu datang ke Pengadilan Agama Sampang dengan membawa surat
+          Lalu datang ke Pengadilan Agama Sampang dengan membawa surat
           keterangan tersebut dan kemudian akan dibuatkan surat pengantar ke
           Kantor Kepolisian.
         </p>
@@ -71,7 +71,7 @@ export default function Duplikat() {
         </div>
 
         <p className="w-full">
-          7. Membawa uang tunai sebesar Rp. 10.000,- (sepuluh ribu rupiah)
+          Membawa uang tunai sebesar Rp. 10.000,- (sepuluh ribu rupiah)
           Berdasarkan PP Nomor 5 Tahun 2019 tentang Jenis Dan Tarif Atas Jenis
           Penerimaan Negara Bukan Pajak Yang Berlaku Pada Mahkamah Agung Dan
           Badan Peradilan Yang Berada Di Bawahnya

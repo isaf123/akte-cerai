@@ -15,7 +15,10 @@ export default function SalinanPutusan() {
         </div>
         <div className="text-white flex  gap-4 pl-12">
           <span className="text-xs text-[#a9efc3] pt-1">●</span>
-          <p>Membawa bukti identitas diri (KTP Asli/SIM/PASPOR)</p>
+          <p>
+            Membawa identitas perkara yang bersangkutan (Nomor perkara, Relas
+            Panggilan
+          </p>
         </div>
       </div>
       <div>

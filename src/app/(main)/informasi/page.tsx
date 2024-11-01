@@ -43,28 +43,38 @@ export default function InformationSection() {
               penting:
             </p>
             <ol className=" text-[16px] list-decimal ml-8 list">
-              <li>
-                Mengakhiri hubungan perkawinan secara sah: Dengan adanya akta
-                cerai, hubungan perkawinan antara pasangan dianggap telah resmi
-                berakhir secara hukum dan sah di mata negara..
+              <li className="font-semibold">
+                Mengakhiri hubungan perkawinan secara sah :
               </li>
-              <li>
-                Melindungi hak dan kewajiban pasangan: Akta cerai juga berisi
-                informasi tentang hak dan kewajiban pasangan setelah perceraian,
-                termasuk pembagian harta dan tanggung jawab atas anak-anak.
+              <p>
+                Dengan adanya akta cerai, hubungan perkawinan antara pasangan
+                dianggap telah resmi berakhir secara hukum dan sah di mata
+                negara.
+              </p>
+              <li className="font-semibold ">
+                Melindungi hak dan kewajiban pasangan :
               </li>
-              <li>
-                Mempermudah proses administratif: Akta cerai diperlukan untuk
-                mengurus berbagai administrasi setelah perceraian, seperti
-                mengubah status perkawinan pada dokumen-dokumen resmi seperti
-                KTP, KK, dan akta kelahiran anak.
+              <p>
+                Akta cerai juga berisi informasi tentang hak dan kewajiban
+                pasangan setelah perceraian, termasuk pembagian harta dan
+                tanggung jawab atas anak-anak.
+              </p>
+              <li className="font-semibold">
+                Mempermudah proses administratif :
               </li>
-              <li>
-                Mencegah perselisihan di masa depan: Dengan adanya akta cerai,
-                pasangan dapat menghindari kemungkinan perselisihan di masa
-                depan terkait status perkawinan dan tanggung jawab mereka
-                sebagai mantan pasangan.
+              <p>
+                Akta cerai diperlukan untuk mengurus berbagai administrasi
+                setelah perceraian, seperti mengubah status perkawinan pada
+                dokumen-dokumen resmi seperti KTP, KK, dan akta kelahiran anak.
+              </p>
+              <li className="font-semibold">
+                Mencegah perselisihan di masa depan :
               </li>
+              <p>
+                Dengan adanya akta cerai, pasangan dapat menghindari kemungkinan
+                perselisihan di masa depan terkait status perkawinan dan
+                tanggung jawab mereka sebagai mantan pasangan.
+              </p>
             </ol>
           </div>
         </div>
@@ -142,7 +152,7 @@ export default function InformationSection() {
                 pihak ketika hendak mengajukan upaya hukum.
               </li>
               <li>
-                - Bahan utama dalam menyusun memori banding atau memori kasasi
+                Bahan utama dalam menyusun memori banding atau memori kasasi
                 adalah salinan putusan pada tingkat pertama.
               </li>
             </ol>

@@ -43,6 +43,12 @@ export default function PriceList() {
         <h3 className="max-md:text-3xl text-4xl font-bold text-center">
           Daftar Tarif Penerimaan Bukan Pajak {`(PNBP)`}
         </h3>
+        <h3 className="text-lg max-md:w-[330px] w-[750px] font-semibold text-center text-[#32b281] m-auto">
+          Dalam Penyerahan Produk Pengadilan Agama Sampang Berdasarkan PP Nomor
+          5 Tahun 2019 tentang Jenis dam Tarif Penerimaan Negara Bukan Pajak
+          yang Berlaku pada Mahkamah Agung dan Badan Peradilan yang berada
+          dibawahnya
+        </h3>
       </div>
       <div className="max-w-[920px] m-auto ">
         <Card>
