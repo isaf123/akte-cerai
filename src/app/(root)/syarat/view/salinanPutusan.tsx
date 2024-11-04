@@ -17,7 +17,7 @@ export default function SalinanPutusan() {
           <span className="text-xs text-[#a9efc3] pt-1">●</span>
           <p>
             Membawa identitas perkara yang bersangkutan (Nomor perkara, Relas
-            Panggilan
+            Panggilan)
           </p>
         </div>
       </div>

@@ -8,7 +8,8 @@ export default function InformationSection() {
       <div className="w-full m-auto max-md:px-2 px-80">
         <h4 className="text-5xl font-bold text-center">Informasi</h4>
         <p className="text-lg text-center text-[#17a34a]">
-          Informasi surat penting dalam proses pengurusan perceraian
+          Informasi surat penting dalam penyerahan produk Pengadilan Agama
+          Sampang
         </p>
         <Separator className="mt-6" />
         <div className="flex max-md:flex-col justify-between max-md:gap-8 gap-24 items-start relative overflow-hidden p-6 max-md:px-6 px-28">
