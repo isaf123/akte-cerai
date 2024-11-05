@@ -41,9 +41,12 @@ export default function Home() {
                         rancangan aktualisasi.
                       </p>
                     </div>
-                    <p className="text-white max-md:text-sm mt-4">
-                      <span className="text-[#a9efc3]">Oleh :</span>Belinda Dwi
-                      Tamara, S.H.
+                    <p className="text-[#a9efc3] mt-2">Oleh :</p>
+                    <p className="text-white max-md:text-sm mt-1">
+                      Belinda Dwi Tamara, S.H.
+                    </p>
+                    <p className="text-white max-md:text-sm mt-1">
+                      19990413 202405 2 002
                     </p>
 
                     <Link href={"/menu"}>
