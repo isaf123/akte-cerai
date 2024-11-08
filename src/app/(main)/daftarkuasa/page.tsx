@@ -6,8 +6,6 @@ import Link from "next/link";
 import Image from "next/image";
 import BlurFade from "@/components/ui/blur-fade";
 export default function Submit() {
-  const url = window.location.href;
-
   return (
     <div className=" min-h-screen m-auto z-10 flex flex-col justify-center items-center max-md:mt-20">
       <div>
@@ -17,15 +15,7 @@ export default function Submit() {
         ></WordPullUp>
         <BlurFade delay={0.5}>
           <div className="w-fit m-auto">
-            <Link
-              href={
-                url.includes("kuasa")
-                  ? "https://forms.gle/A3jqTJGsNvhf8hn66"
-                  : url.includes("mandiri")
-                  ? "https://forms.gle/eLkvumyvanYKEqkj6"
-                  : ""
-              }
-            >
+            <Link href={"https://forms.gle/A3jqTJGsNvhf8hn66"}>
               <Button className="m-auto text-lg px-8 py-6 bg-[#32b281]">
                 Daftar
               </Button>

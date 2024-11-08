@@ -49,7 +49,7 @@ export default function Home() {
                       19990413 202405 2 002
                     </p>
 
-                    <Link href={"/menu"}>
+                    <Link href={"/menu.html"}>
                       <Button className="bg-[#a9efc3] text-black mt-5 mb-10 hover:text-white">
                         lanjut
                         <MoveRight className="size-4 ml-2" />
